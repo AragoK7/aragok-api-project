@@ -14,7 +14,7 @@ function makeHTML(data){
         }
         document.getElementById("error").innerHTML = "...loading...";
         function fetchData(page){
-            fetch(`http://localhost:3000/api/${page}`,{
+            fetch(`/api/${page}`,{
             method:"GET",
             headers:{
                 "Accept":"application/json"
@@ -71,7 +71,7 @@ function makeHTML(data){
             const name = document.getElementById("name").value;
             if(!name) return;
             document.getElementById("error").innerHTML = "...loading...";
-            fetch("http://localhost:3000/name",{
+            fetch("/name",{
                 method:"POST",
                 headers:{
                     'Content-Type':"application/json"
@@ -85,4 +85,3 @@ function makeHTML(data){
             });
             document.getElementById("name").value = "";
         }
-
