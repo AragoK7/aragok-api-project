@@ -1,6 +1,6 @@
 const express = require("express");
 const fetch = require("node-fetch");
-const PORT = env.process.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 // api for meals 
