@@ -6,8 +6,6 @@ const app = express();
 // api for meals
 // "https://www.themealdb.com/api/json/v1/1/random.php"
 
-const data = [];
-
 const { dbConnection } = require("./database.js");
 
 dbConnection.connect((err) => {
